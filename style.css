@@ -1,5 +1,49 @@
 .stats{
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.row-boat{
+  background-image: url(./rowboat.png);
+  height: 300px;
+  width: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.boats-row{
+  display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
+  height: 35rem;
+  align-items: center;
+}
+
+.total-stuff{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer{
+display: flex;
+flex-direction: column;
+align-items: center;
+height: 10rem;
+}
+
+.button-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: inherit;
+}
+
+button{
+  pointer-events: none;
+}
+
+.click-me{
+  outline: 4px dashed yellow;
 }

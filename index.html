@@ -21,15 +21,38 @@
       <div class="col-12 text-center h1 text-info">Fishing Game</div>
     </div>
     <div class="row stats">
-      <div class="col-4 text-dark">Total fish: <span>0</span></div>
-      <div class="col-4 text-dark">Total fish per second: <span>0</span></div>
-    </div>
+      <div class="col-5 total-stuff">
+        <div class="col-5 text-dark">Total fish: <span id="total-fish">0</span></div>
+      </div>
+      <div class="col-5 total-stuff">
+        <div class="col-5 text-dark">Total fish per second: <span id="total-auto-mods"></span></div>
+        <div class="col-5 text-dark">Total additional poles: <span id="total-poles"></span></div>
+        <div class="col-5 text-dark">Total nets: <span id="total-nets"></span></div>
+        <div class="col-5 text-dark">Total fishers: <span id="total-fishers"></span></div>
+        <div class="col-5 text-dark">Total additional boats: <span id="total-boats"></span></div>
+      </div>
   </header>
-  <main>
-
+  <main class="container-fluid">
+    <div class="row boats-row">
+      <div class="col-3"></div>
+      <div class="col-3 row-boat" id="row-boat" onclick="goFish()"></div>
+      <div class="col-3"></div>
+    </div>
   </main>
-  <footer>
-
+  <footer class="container-fluid">
+    <div class="row store-row">
+      <div class="col-12 h2 text-dark m-0">Tackle Shop</div>
+    </div>
+    <div class="row button-row py-4">
+      <button type="button" class="btn btn-success p-3" id="pole-button" onclick="buyPole()">Buy a Pole :
+        $<span id="total-price-pole"></span><br> Adds 5 fish per click</button>
+      <button type="button" class="btn btn-danger p-3" id="net-button" onclick="buyNet()">Buy a Net : $<span
+          id="total-price-net"></span><br> Adds 25 fish per click</button>
+      <button type="button" class="btn btn-warning p-3" id="fisher-button" onclick="buyFisher()">Buy a Fisher :
+        $<span id="total-price-fisher"></span><br> Adds 35 fish per second</button>
+      <button type="button" class="btn btn-info p-3" id="boat-button" onclick="buyBoat()">Buy a Boat : $<span
+          id="total-price-boat"></span><br> Adds 120 fish every 3 seconds</button>
+    </div>
   </footer>
 
 
