@@ -20,11 +20,13 @@ main{
   text-align: end;
 }
 
+
 .total-box{
   color: darkslategray;
   border: 2px dashed teal;
   text-align: center;
   align-self: flex-end;
+  align-items: center;
 }
 
 
@@ -35,11 +37,15 @@ main{
   align-items: flex-start;
   text-align: flex-start;
   width: fit-content;
+  align-items: center;
 }
 
 .total-stuff{
   display: flex;
   flex-direction: column;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  align-items: center;
 }
 
 .row-boat{
