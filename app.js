@@ -186,7 +186,16 @@ function checkButtonBoat() {
   }
 }
 
+function moveBoatLeft() {
+  document.getElementById("move-boat").className = ("row boats-row-move")
+}
 
-
+function moveBoat() {
+  document.getElementById("move-boat").className = ("row boats-row")
+}
 
 updateFish()
+
+setInterval(moveBoatLeft, 1000)
+
+setInterval(moveBoat, 2000)

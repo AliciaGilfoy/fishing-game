@@ -1,6 +1,5 @@
 header{
   background-color: rgb(180, 177, 177);
-  padding: 1rem;
 }
 
 main{
@@ -9,6 +8,13 @@ main{
   background-position-y: top;
 }
 
+.title{
+height: 5rem;
+background-image: url(https://picsum.photos/id/194/1900);
+background-position: center;
+background-position-y: bottom;
+padding: 1rem;
+}
 .stats{
   display: flex;
   flex-direction: row;
@@ -25,8 +31,8 @@ main{
   color: darkslategray;
   border: 2px dashed teal;
   text-align: center;
-  align-self: flex-end;
   align-items: center;
+  width: fit-content;
 }
 
 
@@ -38,6 +44,7 @@ main{
   text-align: flex-start;
   width: fit-content;
   align-items: center;
+  text-align: center;
 }
 
 .total-stuff{
@@ -46,6 +53,8 @@ main{
   padding-left: 5rem;
   padding-right: 5rem;
   align-items: center;
+  align-content: center;
+  text-align: center;
 }
 
 .row-boat{
@@ -62,6 +71,15 @@ main{
   justify-content: space-evenly;
   height: 35rem;
   align-items: center;
+}
+
+.boats-row-move{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 35rem;
+  align-items: center;
+  margin-left: 2px;
 }
 
 
@@ -89,3 +107,4 @@ button{
 .click-me{
   outline: 4px dashed yellow;
 }
+
